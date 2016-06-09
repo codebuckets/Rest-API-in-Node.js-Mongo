@@ -25,8 +25,20 @@ https://docs.mongodb.com/manual/installation/
 
 # Setup Guide
 + Download or clone these files.
-+ Create node.js server
++ All packages and dependencies are define in package.json file, you have to run command npm install to load all required node modules and if you want to update the version of modules then you have to run command npm update.
++ After package installation create node.js server
 + start node.js server
   + Switch to the project directory Eg: cd /var/www/html/node-project
   + Then run command: node file_name.js
-  + Then run services Eg: http://localhost:3000/users.json (here users is collection name)
+
++ Then run services Eg: http://localhost:3000/users.json (here users is collection name)
++ This rest API uses GET, POST, PUT, DELETE methods to fetch, add, update and delete data.
+
+# Services Example
++ http://localhost:3000/:collection.json
++ http://localhost:3000/:collection/(:_id).json
+
+
+# Author
+## Siddharth Pandey
+Email: <a href="mailto:codebuckets@gmail.com">codebuckets@gmail.com</a>
